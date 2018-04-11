@@ -27,17 +27,16 @@
                     <td th:style="${todo.isDone() == true ? 'background-color: green' : 'background-color: red;'}" th:text="${todo.isDone()}"></td>
                     <td th:style="${todo.isDone() == true ? 'background-color: green' : 'background-color: red;'}" th:text="${todo.isUrgent()}"></td>
                     <td th:style="${todo.isDone() == true ? 'background-color: green' : 'background-color: red;'}">
-                        <a th:href="'/todo/' + ${todo.getId()} + '/delete'" type="button" class="btn btn-dark">delete</a>
+                        <a th:href="'/' + ${todo.getId()} + '/delete'" type="button" class="btn btn-dark">delete</a>
                     </td>
                     <td th:style="${todo.isDone() == true ? 'background-color: green' : 'background-color: red;'}">
-                        <a th:href="'/todo/' +  ${todo.getId()} + '/done'" type="button" class="btn btn-dark">Done</a>
+                        <a th:href="'/' +  ${todo.getId()} + '/done'" type="button" class="btn btn-dark">Done</a>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
 </div>
-<a href="/todo/add" type="button" class="btn btn-secondary">Add new todo</a>
 <a href="/add" type="button" class="btn btn-secondary">Add new todo</a>
 <script src="webjars/jquery/1.11.1/jquery.min.js"></script>
 <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
