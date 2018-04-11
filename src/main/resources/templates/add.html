@@ -6,13 +6,13 @@
     <title>Create New Todo</title>
 </head>
 <body>
-<form action="#" th:action="@{/todo/add}" method="post">
+<form action="#" th:action="@{/add}" method="post">
     <div class="alert alert-secondary" role="alert">
     <h1> Add new todo: </h1>
     <label for = "todotilte"></label>
     <p>Title: <input type="text" id="todotilte" name="todotitle" /></p>
     <p><input type="submit" value="Submit" class="btn btn-secondary" />
-        <a th:href="'/todo/'" type="button" class="btn btn-dark">Back</a>
+        <a th:href="'/'" type="button" class="btn btn-dark">Back</a>
     </div>
 </form>
 
