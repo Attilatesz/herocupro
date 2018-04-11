@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Create New Todo</title>
+</head>
+<body>
+<form action="#" th:action="@{/todo/add}" method="post">
+    <div class="alert alert-secondary" role="alert">
+    <h1> Add new todo: </h1>
+    <label for = "todotilte"></label>
+    <p>Title: <input type="text" id="todotilte" name="todotitle" /></p>
+    <p><input type="submit" value="Submit" class="btn btn-secondary" />
+        <a th:href="'/todo/'" type="button" class="btn btn-dark">Back</a>
+    </div>
+</form>
+
+<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>
