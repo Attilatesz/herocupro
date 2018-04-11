@@ -48,6 +48,6 @@ public class ToDoController {
   public String changeDone(@PathVariable Long id) {
     toDoService.changeIsDone(id);
     toDoRepository.save(toDoRepository.findById(id).get());
-    return "redirect:/todo/list";
+    return "redirect:/list";
   }
 }
