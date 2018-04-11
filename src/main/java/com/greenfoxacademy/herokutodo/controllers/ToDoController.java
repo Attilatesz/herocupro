@@ -43,7 +43,7 @@ public class ToDoController {
     toDoService.deleteToDo(id);
     return "redirect:/list";
   }
-  
+
   @GetMapping(value = "/{id}/done")
   public String changeDone(@PathVariable Long id) {
     toDoService.changeIsDone(id);
