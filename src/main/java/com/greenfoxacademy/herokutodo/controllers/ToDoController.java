@@ -4,9 +4,9 @@ package com.greenfoxacademy.herokutodo.controllers;
 //        Add a single public String list(Model model) method which maps to / and /list in the controller, which returns with "This is my first todo" string. Use the @Responsebody annotation.
 //        Run the application. If all works fine, we can go ahead.
 
-import com.greenfoxacademy.dbexample.models.Todo;
-import com.greenfoxacademy.dbexample.repositories.ToDoRepository;
-import com.greenfoxacademy.dbexample.services.ToDoService;
+import com.greenfoxacademy.herokutodo.models.Todo;
+import com.greenfoxacademy.herokutodo.repositories.ToDoRepository;
+import com.greenfoxacademy.herokutodo.services.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
