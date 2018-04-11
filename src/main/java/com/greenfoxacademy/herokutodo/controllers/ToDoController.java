@@ -13,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/todo")
 public class ToDoController {
 
   @Autowired
@@ -36,12 +35,12 @@ public class ToDoController {
   @PostMapping(value = "/add")
   public String toDoSubmit(@ModelAttribute(value = "todotitle") String title) {
     toDoRepository.save(new Todo(title));
-    return "redirect:/todo/list";
+    return "redirect:/list";
   }
 
   @GetMapping(value = "/{id}/delete")
   public String delete(@PathVariable Long id){
     toDoService.deleteToDo(id);
-    return "redirect:/todo/list";
+    return "redirect:/list";
   }
 }
